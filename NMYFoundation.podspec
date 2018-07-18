@@ -16,8 +16,8 @@ The foundation components including networking(based on AFNetworking) module etc
 
   s.subspec 'Networking' do |sp|
     sp.source_files = 'NMYFoundation/Classes/Networking/*.{h,m}'
-    sp.dependency = 'AFNetworking'
-    sp.dependency = 'YYModel'
+    sp.dependency 'AFNetworking'
+    sp.dependency 'YYModel'
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
