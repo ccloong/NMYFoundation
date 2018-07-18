@@ -22,7 +22,7 @@ pod 'NMYFoundation'
 
 ## Author
 
-mayue, mayue@smartisan.com
+mayue, nathan.my@gmail.com
 
 ## License
 

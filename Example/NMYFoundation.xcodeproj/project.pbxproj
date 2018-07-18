@@ -62,11 +62,11 @@
 		80FE6F80A99E2FBD0DAB34D4 /* Pods-NMYFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMYFoundation_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMYFoundation_Tests/Pods-NMYFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		829B09D1120781D4D009FEBE /* Pods-NMYFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMYFoundation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMYFoundation_Example/Pods-NMYFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9E33191FCE544C251E735886 /* NMYFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NMYFoundation.podspec; path = ../NMYFoundation.podspec; sourceTree = "<group>"; };
+		9E33191FCE544C251E735886 /* NMYFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NMYFoundation.podspec; path = ../NMYFoundation.podspec; sourceTree = "<group>"; };
 		D7148CEC49C50B7A953EF420 /* Pods_NMYFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMYFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDFE9ED76FF5B57FD51242ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DDFE9ED76FF5B57FD51242ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E91FD139AC1D986A96484466 /* Pods-NMYFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMYFoundation_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMYFoundation_Tests/Pods-NMYFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FEB76FD5EA58911C8DF48E3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FEB76FD5EA58911C8DF48E3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +248,7 @@
 			attributes = {
 				CLASSPREFIX = NMY;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = mayue;
+				ORGANIZATIONNAME = ccloong;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -304,11 +304,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NMYFoundation_Example/Pods-NMYFoundation_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/NMYFoundation/NMYFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMYFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

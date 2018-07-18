@@ -1,0 +1,40 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - NMYFoundation (0.1.0):
+    - AFNetworking
+    - NMYFoundation/Networking (= 0.1.0)
+    - YYModel
+  - NMYFoundation/Networking (0.1.0):
+    - AFNetworking
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - NMYFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  NMYFoundation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  NMYFoundation: 3677910b89b02978828b4552cadd76d79b02b77b
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 91182cd252b6bb6fcbfd9f7f66e4f30beabbdd8c
+
+COCOAPODS: 1.3.1
