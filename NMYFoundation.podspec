@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NMYFoundation'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'Private pod of foundation components'
 
   s.description      = <<-DESC
