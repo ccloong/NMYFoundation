@@ -6,12 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NMYNetworkingDefines.h"
 
 @class NMYHttpResponse<ObjectType>;
-@class NMYHttpRequest;
 @interface NMYHttpCall<ObjectType> : NSObject
 
-+ (instancetype)createHttpCallWith:(NMYHttpRequest *)request
++ (instancetype)createHttpCallWithUrl:(NSString *)urlString
+                               method:(NMYHttpMethod)httpMethod
+                           bodyParams:(NSDictionary *)bodyParams
                     dataModelClass:(Class)dataModelClass
                     isHasMoreModel:(BOOL)isHasMoreModel;
 

@@ -14,11 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - NMYFoundation (0.1.0):
-    - AFNetworking
-    - NMYFoundation/Networking (= 0.1.0)
-    - YYModel
-  - NMYFoundation/Networking (0.1.0):
+  - NMYFoundation (0.0.1):
+    - NMYFoundation/Networking (= 0.0.1)
+  - NMYFoundation/Networking (0.0.1):
     - AFNetworking
     - YYModel
   - YYModel (1.0.4)
@@ -32,7 +30,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  NMYFoundation: 3677910b89b02978828b4552cadd76d79b02b77b
+  NMYFoundation: 200e2290687f0d0464ac6ec589615d8af604f910
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 91182cd252b6bb6fcbfd9f7f66e4f30beabbdd8c

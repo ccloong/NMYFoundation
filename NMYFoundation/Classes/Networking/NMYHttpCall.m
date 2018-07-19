@@ -8,7 +8,6 @@
 #import "NMYHttpCall.h"
 #import "NMYNetworkingDefines.h"
 #import "NMYHttpManager.h"
-#import "NMYHttpRequest.h"
 #import "NMYHttpResponse.h"
 
 @interface NMYHttpCall ()
@@ -53,20 +52,22 @@
     return self;
 }
 
-+ (instancetype)createHttpCallWith:(NMYHttpRequest *)request
-                    dataModelClass:(Class)dataModelClass
-                    isHasMoreModel:(BOOL)isHasMoreModel {
-    
++ (instancetype)createHttpCallWithUrl:(NSString *)urlString
+                               method:(NMYHttpMethod)httpMethod
+                           bodyParams:(NSDictionary *)bodyParams
+                       dataModelClass:(Class)dataModelClass
+                       isHasMoreModel:(BOOL)isHasMoreModel {
+
     NSData *data = nil;
     
-    if (request.bodyParam) {
-        data = [NSJSONSerialization dataWithJSONObject:request.bodyParam
+    if (bodyParams) {
+        data = [NSJSONSerialization dataWithJSONObject:bodyParams
                                                options:NSJSONWritingPrettyPrinted
                                                  error:nil];
     }
     
-    return [[self alloc] initWithFullUrl:request.urlString
-                                  method:request.httpMethod
+    return [[self alloc] initWithFullUrl:urlString
+                                  method:httpMethod
                                     data:data
                                  dataKey:nil
                                    clazz:dataModelClass
